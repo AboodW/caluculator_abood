@@ -13,7 +13,7 @@ body{
    border-radius:0.8rem;
    margin-top:2rem;
    width:fit-content;
-   margin-left: 20%;
+   margin-left: 10%;
    display: grid;
    grid-template-columns: repeat(4,3.5rem);
    grid-template-rows:minmax(3.5rem,auto) repeat(5,3.5rem);

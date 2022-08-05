@@ -3,7 +3,7 @@ import './App.css'
 // import Calculator from './Calculator'
 import DigitButton from './DigitButton'
 import OperationButton from './OperationButton'
-import Aboodtext from './Aboodtext'
+// import Aboodtext from './Aboodtext'
 
 export const ACTIONS={
   ADD_DIGIT: "add_digit",
@@ -180,8 +180,8 @@ const App = () => {
         }}>=</button>
 
     </div>
-    <br/><br/><br/><br/><br/>
-    <Aboodtext />
+    {/* <br/><br/><br/><br/><br/>
+    <Aboodtext /> */}
     </>
   )
 }
