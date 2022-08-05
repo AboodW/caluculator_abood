@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+*,*::before,*::after{
+   box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+   margin: 0;
+   background-color: #e7e7e8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calculator-grid{
+   position: relative;
+   background-color:#292d36;
+   border-radius:0.8rem;
+   margin-top:2rem;
+   width:fit-content;
+   margin-left: 20%;
+   display: grid;
+   grid-template-columns: repeat(4,3.5rem);
+   grid-template-rows:minmax(3.5rem,auto) repeat(5,3.5rem);
+   gap: 0.5rem;
+   justify-content: center;
+   padding:0.8rem;
+   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.output{
+   display:flex;
+   grid-column:1 / -1;
+   background-color:#25272b;
+   min-height: 5rem;
+   border-radius: 0.8rem;
+   color:#e7e7e8;
+   font-size: 1.3rem;
+   padding: 0.3rem;
+   flex-direction:column;
+   justify-content: space-around;
+   word-wrap:break-word;
+   word-break:break-all;
+   /* margin-top:.4rem; */
+   /* border-top-right-radius:0.8rem ;
+   border-top-left-radius:0.8rem ; */
 }
 
-.App-link {
-  color: #61dafb;
+.previous-number{
+   color: rgba(255, 255, 255, .75);
+   font-size:0.9rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+   /* z-index:; */
+   position:relative;
+   border:none;
+   border-radius:0.8rem;
+   background-color:#22252d;
+   color:#e7e7e8;
+   font-size: 1.2rem;
+   overflow:hidden;
 }
+
+.span2{
+   grid-column: span 2;
+}
+.lightgr{
+   color:#26e7c4;
+}
+.lightgr:hover{
+   color:#eb6666;
+}
+.redora{
+   color:#eb6666;
+}
+.redora:hover{
+   color:#26e7c4;
+}
+
+.buttons-container{
+   background-color:#292d36;
+   position:absolute;
+   border-radius:0.8rem;
+   display: grid;
+   grid-template-columns: repeat(4,4rem);
+   grid-template-rows:minmax(4rem,auto) repeat(5,4rem);
+   gap: 0.5rem;
+   bottom: 1rem;
+}
+
+button:hover, button:focus{
+   color:#1bf7d2;
+   cursor: pointer;
+   background-color:#414753;
+}
+
+span{
+   position:absolute;
+   background:#e7e7e8;
+   transform:translate(-50%,-50%);
+   pointer-events: none;
+   border-radius: 50%;
+   animation:animate 1s linear infinite;
+
+}
+
+@keyframes animate {
+   0%{
+      width:0px;
+      height:0px;
+      opacity: 0.5;
+   }
+   100%{
+      width:500px;
+      height:500px;
+      opacity: 0;
+   }
+}
+
+

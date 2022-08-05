@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montagu+Slab:opsz,wght@16..144,300&display=swap');
+
+.Abood{
+   margin-left:1rem;
+   /* width:clamp(800px, fit-content, 1200px); */
+   width:fit-content;
+}
+
+h2{
+   position: relative;
+   margin:0;
+   box-sizing: border-box;
+   padding:0;
+   display:flex;
+   justify-content:start;
+   font-family:'Caveat',sans-serif;
+   font-size:clamp(6rem,100%,10rem)
+}
+h2::before{
+   content:attr(data-text);
+   position:absolute;
+   display:flex;
+   justify-content:start;
+   color:rgb(35, 236, 8);
+   /* width:clamp(400px, 427px, 500px); */
+   width: fit-content;
+   border-right: 4px solid rgb(35, 236, 8);
+   /* margin-right:23.83%; */
+   overflow:hidden;
+   white-space: nowrap;
+   animation:animate 8s linear infinite;
+   filter: drop-shadow(0 0 20px rgb(8, 236, 198)) drop-shadow(0 0 50px rgb(8, 236, 198));
+}
+@keyframes animate {
+   0%,10%,100%{
+      width:0;
+   }
+   70%,90%{
+      width:100%;
+   }
+}
+
