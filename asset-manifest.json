@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/caluculator_abood/static/css/main.f70670f4.css",
-    "main.js": "/caluculator_abood/static/js/main.21577a01.js",
+    "main.css": "/caluculator_abood/static/css/main.843f1f67.css",
+    "main.js": "/caluculator_abood/static/js/main.43bf10d7.js",
     "static/js/787.a174f9e5.chunk.js": "/caluculator_abood/static/js/787.a174f9e5.chunk.js",
     "index.html": "/caluculator_abood/index.html",
-    "main.f70670f4.css.map": "/caluculator_abood/static/css/main.f70670f4.css.map",
-    "main.21577a01.js.map": "/caluculator_abood/static/js/main.21577a01.js.map",
+    "main.843f1f67.css.map": "/caluculator_abood/static/css/main.843f1f67.css.map",
+    "main.43bf10d7.js.map": "/caluculator_abood/static/js/main.43bf10d7.js.map",
     "787.a174f9e5.chunk.js.map": "/caluculator_abood/static/js/787.a174f9e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f70670f4.css",
-    "static/js/main.21577a01.js"
+    "static/css/main.843f1f67.css",
+    "static/js/main.43bf10d7.js"
   ]
 }
